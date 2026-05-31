@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Projets - Aisya</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" 
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="cursor-glow"></div>
+  <main class="page-wrapper projects-page">
+
+    <!-- HEADER -->
+    <header class="header">
+      <a href="index.html" class="logo">AA<span>.</span></a>
+
+      <nav class="nav" id="navMenu">
+        <a href="index.html">accueil</a>
+        <a href="about.html">à propos</a>
+        <a href="projects.html" class="active">projets</a>
+        <a href="#">compétences</a>
+        <a href="#">contact</a>
+      </nav>
+
+      <a href="#" class="cv-button">
+        <span>↓</span>
+        télécharger mon CV
+      </a>
+
+      <button class="menu-button" id="menuButton">
+        ☰
+      </button>
+    </header>
+
+    <!-- PROJECTS CONTENT -->
+    <section class="projects-section">
+
+      <div class="projects-heading">
+        <p class="section-label">mes projets</p>
+
+        <h1 class="projects-title">
+          mes projets
+          <span>♡</span>
+        </h1>
+
+        <p class="projects-intro">
+          Voici une sélection de projets réalisés pendant mon parcours. 
+          Chaque projet m’a permis d’apprendre, de collaborer et de créer 
+          des solutions concrètes autour des réseaux, du web, de l’IoT et de la communication.
+        </p>
+      </div>
+
+      <!-- FILTER BUTTONS -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">tous</button>
+        <button class="filter-btn" data-filter="infra">réseaux & infra</button>
+        <button class="filter-btn" data-filter="web">développement web</button>
+        <button class="filter-btn" data-filter="iot">iot & embarqué</button>
+        <button class="filter-btn" data-filter="com">communication</button>
+      </div>
+
+      <!-- PROJECT CARDS -->
+      <div class="projects-grid">
+
+        <!-- PROJECT 1 -->
+        <article class="project-card" data-category="web infra">
+          <div class="project-color-box box-blue">
+            <span>SAÉ24</span>
+          </div>
+
+          <div class="project-content">
+            <p class="project-tag">développement web · infrastructure</p>
+
+            <h2>SAÉ24 — Banc Avionique</h2>
+
+            <p>
+              Projet intégré autour d’un système de suivi des modifications d’un banc avionique. 
+              L’objectif est de prendre des photos, stocker les informations en base de données 
+              et suivre l’évolution des modifications via une interface web.
+            </p>
+
+            <div class="project-meta">
+              <span>Raspberry Pi 3</span>
+              <span>Base de données</span>
+              <span>Site web</span>
+            </div>
+
+            <a href="#" class="project-link">découvrir →</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="project-card" data-category="com">
+          <div class="project-color-box box-yellow">
+            <span>SAÉ14</span>
+          </div>
+
+          <div class="project-content">
+            <p class="project-tag">communication · sensibilisation</p>
+
+            <h2>SAÉ14 — E-réputation</h2>
+
+            <p>
+              Projet consacré à l’e-réputation. Il comprend une étude de cas sur l’impact 
+              des actions en ligne, puis une activité de sensibilisation destinée à un public 
+              collégien pour expliquer comment protéger son image numérique.
+            </p>
+
+            <div class="project-meta">
+              <span>Présentation</span>
+              <span>Prévention</span>
+              <span>Travail d’équipe</span>
+            </div>
+
+            <a href="#" class="project-link">découvrir →</a>
+          </div>
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="project-card" data-category="iot">
+          <div class="project-color-box box-green">
+            <span>Smart Cane</span>
+          </div>
+
+          <div class="project-content">
+            <p class="project-tag">iot · systèmes embarqués</p>
+
+            <h2>Smart Cane Project</h2>
+
+            <p>
+              Maquette de canne intelligente conçue avec Arduino pour aider les personnes 
+              malvoyantes. Le système détecte les obstacles grâce à des capteurs, prévient 
+              l’utilisateur par vibration et active une lumière lorsqu’il fait sombre.
+            </p>
+
+            <div class="project-meta">
+              <span>Arduino</span>
+              <span>Capteurs</span>
+              <span>Prototype</span>
+            </div>
+
+            <a href="#" class="project-link">découvrir →</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- DECORATIONS -->
+      <span class="project-doodle star-left">✦</span>
+      <span class="project-doodle star-right">☆</span>
+      <span class="project-doodle note">Chaque projet est une nouvelle aventure !</span>
+
+    </section>
+
+    <div class="wave"></div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
