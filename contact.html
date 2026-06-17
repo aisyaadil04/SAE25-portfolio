@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Contact - Aisya</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" 
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="cursor-glow"></div>
+
+  <main class="page-wrapper contact-page">
+
+    <!-- HEADER -->
+    <header class="header">
+      <a href="index.html" class="logo">AA<span>.</span></a>
+
+      <nav class="nav" id="navMenu">
+        <a href="index.html" data-i18n="nav_home">accueil</a>
+        <a href="about.html" data-i18n="nav_about">à propos</a>
+        <a href="projects.html" data-i18n="nav_projects">projets</a>
+        <a href="competences.html" data-i18n="nav_skills">compétences</a>
+        <a href="contact.html" class="active" data-i18n="nav_contact">contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="language-switch">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <span>/</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+
+        <a href="cv-aisya.pdf" class="cv-button" download data-i18n="download_cv">
+          <span>↓</span>
+          télécharger mon CV
+        </a>
+      </div>
+
+      <button class="menu-button" id="menuButton">
+        ☰
+      </button>
+    </header>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+
+      <!-- HERO -->
+      <div class="contact-heading">
+        <p class="section-label" data-i18n="contact_label">contact</p>
+
+        <h1 class="contact-title" data-i18n="contact_title">
+          envie <span>d’échanger ?</span>
+        </h1>
+
+        <p class="contact-intro" data-i18n="contact_intro">
+          Une question, une opportunité ou simplement l’envie d’échanger ?
+          Je serais ravie d’avoir de vos nouvelles !
+        </p>
+      </div>
+
+      <!-- INFO BOARD -->
+      <div class="contact-board">
+
+        <div class="contact-info-card notebook-card">
+          <div class="notebook-rings">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="contact-info-list">
+
+            <!-- LinkedIn -->
+            <div class="contact-info-row">
+              <div class="info-icon linkedin-bg">in</div>
+
+              <div class="info-text">
+                <h3 data-i18n="contact_linkedin_title">Me contacter sur LinkedIn <span>♡</span></h3>
+                <p data-i18n="contact_linkedin_text">Le meilleur moyen d’échanger avec moi ! Réponse rapide garantie.</p>
+              </div>
+
+              <a 
+                href="https://www.linkedin.com/in/aisya-binti-adil-zahni-82701529b?utm_source=share_via&utm_content=profile&utm_medium=member_ios" 
+                target="_blank" 
+                class="info-action"
+                data-i18n="contact_linkedin_button"
+              >
+                Voir mon profil
+              </a>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-info-row">
+              <div class="info-icon mail-bg">✉</div>
+
+              <div class="info-text">
+                <h3 data-i18n="contact_email_title">Envoyez-moi un email <span>↷</span></h3>
+                <p data-i18n="contact_email_text">N’hésitez pas à m’écrire, je vous répondrai dans les plus brefs délais.</p>
+              </div>
+
+              <div class="info-action static-pill">
+                aisya.binti-adil-zahni@etu.unice.fr
+              </div>
+            </div>
+
+            <!-- Localisation -->
+            <div class="contact-info-row">
+              <div class="info-icon location-bg">⌖</div>
+
+              <div class="info-text">
+                <h3 data-i18n="contact_location_title">Ma localisation <span>♡</span></h3>
+                <p data-i18n="contact_location_text">Basée à Antibes, disponible pour des opportunités en présentiel ou à distance.</p>
+              </div>
+
+              <div class="info-action static-pill green-pill">
+                Antibes, France
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="contact-note-card">
+          <div class="paperclip">⌇</div>
+          <p data-i18n="contact_note_text">
+            Ouverte aux projets créatifs, stages, alternances, collaborations
+            ou discussions inspirantes !
+          </p>
+          <span>♡</span>
+        </div>
+
+      </div>
+
+      <!-- FORM + PHOTO -->
+      <div class="contact-form-wrapper">
+
+        <div class="contact-photo-card">
+          <div class="tape contact-tape"></div>
+
+          <img src="images/contact-photo.jpg" alt="Photo de Aisya" class="contact-real-img" />
+
+          <p>Aisya <span>♡</span></p>
+        </div>
+
+        <div class="contact-form-card">
+          <h2 data-i18n="contact_form_title">Envoyez-moi un message <span>♡</span></h2>
+
+          <form 
+            class="contact-form" 
+            action="mailto:aisya.binti-adil-zahni@etu.unice.fr" 
+            method="POST" 
+            enctype="text/plain"
+          >
+            <div class="form-row">
+              <input 
+                type="text" 
+                name="Nom" 
+                placeholder="Votre nom" 
+                data-i18n-placeholder="contact_placeholder_name"
+                required 
+              />
+
+              <input 
+                type="email" 
+                name="Email" 
+                placeholder="Votre email" 
+                data-i18n-placeholder="contact_placeholder_email"
+                required 
+              />
+            </div>
+
+            <input 
+              type="text" 
+              name="Sujet" 
+              placeholder="Sujet" 
+              data-i18n-placeholder="contact_placeholder_subject"
+              required 
+            />
+
+            <textarea 
+              name="Message" 
+              placeholder="Votre message" 
+              data-i18n-placeholder="contact_placeholder_message"
+              required
+            ></textarea>
+
+            <div class="form-bottom">
+              <button type="submit" class="send-btn" data-i18n="contact_send_button">
+                Envoyer mon message
+              </button>
+
+              <span class="form-doodle">☺</span>
+            </div>
+          </form>
+        </div>
+
+      </div>
+
+      <!-- FOOT TEXT -->
+      <div class="contact-bottom-box">
+        <span class="bottom-star">✦</span>
+
+        <div>
+          <p data-i18n="contact_bottom_text">Merci d’avoir pris le temps de visiter mon portfolio.</p>
+          <h3 data-i18n="contact_bottom_title">Au plaisir d’échanger avec vous !</h3>
+        </div>
+
+        <span class="bottom-heart">♡</span>
+      </div>
+
+      <!-- DOODLES -->
+      <span class="contact-doodle contact-star-one">✦</span>
+      <span class="contact-doodle contact-heart-one">♥</span>
+      <span class="contact-doodle contact-smile-one">☺</span>
+
+    </section>
+
+    <div class="wave contact-wave"></div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

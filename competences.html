@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Compétences - Aisya</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" 
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="cursor-glow"></div>
+
+  <main class="page-wrapper skills-page">
+
+    <!-- HEADER -->
+    <header class="header">
+      <a href="index.html" class="logo">AA<span>.</span></a>
+
+      <nav class="nav" id="navMenu">
+        <a href="index.html" data-i18n="nav_home">accueil</a>
+        <a href="about.html" data-i18n="nav_about">à propos</a>
+        <a href="projects.html" data-i18n="nav_projects">projets</a>
+        <a href="competences.html" class="active" data-i18n="nav_skills">compétences</a>
+        <a href="contact.html" data-i18n="nav_contact">contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="language-switch">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <span>/</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+
+        <a href="cv-aisya.pdf" class="cv-button" download data-i18n="download_cv">
+          <span>↓</span>
+          télécharger mon CV
+        </a>
+      </div>
+
+      <button class="menu-button" id="menuButton">
+        ☰
+      </button>
+    </header>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills-section">
+
+      <div class="skills-heading">
+        <p class="section-label" data-i18n="skills_label">mes apprentissages</p>
+
+        <h1 class="skills-title" data-i18n="skills_title">
+          mes compétences <span>♡</span>
+        </h1>
+
+        <p class="skills-intro" data-i18n="skills_intro">
+          Voici les compétences que je développe au fil de ma formation, de mes projets
+          et de mes expériences. Elles regroupent à la fois des compétences techniques,
+          des outils pratiques et des compétences humaines.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- RÉSEAUX -->
+        <article class="skill-column">
+          <div class="skill-icon blue-icon">✣</div>
+
+          <h2 data-i18n="skills_network_title">Réseaux & infrastructure</h2>
+
+          <div class="skill-badges">
+            <span>VLAN</span>
+            <span data-i18n="skill_routing">Routage</span>
+            <span data-i18n="skill_ip_addressing">Adressage IP</span>
+            <span>DNS / DHCP</span>
+            <span>NAT</span>
+            <span>ACL</span>
+            <span>Wireshark</span>
+            <span>Packet Tracer</span>
+          </div>
+        </article>
+
+        <!-- WEB -->
+        <article class="skill-column">
+          <div class="skill-icon yellow-icon">&lt;/&gt;</div>
+
+          <h2 data-i18n="skills_web_title">Développement web</h2>
+
+          <div class="skill-badges">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>PHP</span>
+            <span>SQL</span>
+            <span data-i18n="skill_database">Base de données</span>
+            <span data-i18n="skill_web_interfaces">Interfaces web</span>
+            <span>GitHub Pages</span>
+          </div>
+        </article>
+
+        <!-- IOT -->
+        <article class="skill-column">
+          <div class="skill-icon green-icon">▣</div>
+
+          <h2 data-i18n="skills_iot_title">IoT & systèmes embarqués</h2>
+
+          <div class="skill-badges">
+            <span>Raspberry Pi 3</span>
+            <span>Arduino</span>
+            <span data-i18n="skill_sensors">Capteurs</span>
+            <span data-i18n="skill_camera">Caméra</span>
+            <span data-i18n="skill_prototyping">Prototypage</span>
+            <span data-i18n="skill_tests">Tests</span>
+            <span data-i18n="skill_system_logic">Logique système</span>
+          </div>
+        </article>
+
+        <!-- COMMUNICATION -->
+        <article class="skill-column">
+          <div class="skill-icon purple-icon">●●</div>
+
+          <h2 data-i18n="skills_communication_title">Communication & gestion</h2>
+
+          <div class="skill-badges">
+            <span data-i18n="skill_teamwork">Travail en équipe</span>
+            <span data-i18n="skill_oral_presentation">Présentation orale</span>
+            <span data-i18n="skill_awareness">Sensibilisation</span>
+            <span data-i18n="skill_pedagogy">Pédagogie</span>
+            <span data-i18n="skill_reports">Rédaction de rapports</span>
+            <span data-i18n="skill_organization">Organisation</span>
+          </div>
+        </article>
+
+        <!-- OUTILS -->
+        <article class="skill-column">
+          <div class="skill-icon pink-icon">✎</div>
+
+          <h2 data-i18n="skills_tools_title">Outils utilisés</h2>
+
+          <div class="skill-badges">
+            <span>VS Code</span>
+            <span>GitHub</span>
+            <span>Linux / Debian</span>
+            <span>VirtualBox</span>
+            <span>Canva</span>
+            <span>Arduino IDE</span>
+            <span>Wireshark</span>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="skills-note">
+        <span>✦</span>
+        <p data-i18n="skills_note">Apprendre, créer, connecter — toujours en progression.</p>
+        <span>♡</span>
+      </div>
+
+      <span class="skills-doodle skills-star-one">✦</span>
+      <span class="skills-doodle skills-star-two">☆</span>
+      <span class="skills-doodle skills-smile">☺</span>
+
+    </section>
+
+    <div class="wave skills-wave"></div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

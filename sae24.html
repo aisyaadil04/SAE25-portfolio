@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>SAÉ24 - Aisya</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" 
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="cursor-glow"></div>
+
+  <main class="page-wrapper project-detail-page">
+
+    <!-- HEADER -->
+    <header class="header">
+      <a href="index.html" class="logo">AA<span>.</span></a>
+
+      <nav class="nav" id="navMenu">
+        <a href="index.html" data-i18n="nav_home">accueil</a>
+        <a href="about.html" data-i18n="nav_about">à propos</a>
+        <a href="projects.html" class="active" data-i18n="nav_projects">projets</a>
+        <a href="competences.html" data-i18n="nav_skills">compétences</a>
+        <a href="contact.html" data-i18n="nav_contact">contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="language-switch">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <span>/</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+
+        <a href="cv-aisya.pdf" class="cv-button" download data-i18n="download_cv">
+          <span>↓</span>
+          télécharger mon CV
+        </a>
+      </div>
+
+      <button class="menu-button" id="menuButton">
+        ☰
+      </button>
+    </header>
+
+    <!-- PROJECT DETAIL CONTENT -->
+    <section class="project-detail-section">
+
+      <a href="projects.html" class="back-link" data-i18n="sae24_back">← retour aux projets</a>
+
+      <div class="project-detail-hero">
+        <div class="project-detail-text">
+          <p class="section-label" data-i18n="sae24_label">fiche projet</p>
+
+          <h1 class="project-detail-title" data-i18n="sae24_title">
+            SAÉ24 — Suivi de modifications d’un banc avionique <span>♡</span>
+          </h1>
+
+          <p class="project-detail-intro" data-i18n="sae24_intro">
+            Un projet intégré combinant Raspberry Pi, caméra, base de données et interface web afin de suivre visuellement l’évolution des modifications d’un banc avionique.
+          </p>
+
+          <div class="project-detail-tags">
+            <span>Raspberry Pi 3</span>
+            <span data-i18n="sae24_tag_database">Base de données</span>
+            <span data-i18n="sae24_tag_web">Site web</span>
+            <span data-i18n="sae24_tag_team">Travail en équipe</span>
+          </div>
+        </div>
+
+        <div class="project-detail-visual">
+          <div class="tape project-detail-tape"></div>
+
+          <div class="project-detail-polaroid">
+            <div class="project-detail-image">
+              <img src="images/project-sae24.jpg" alt="SAÉ24 — Banc Avionique" />
+              <span>SAÉ24</span>
+            </div>
+            <p>Projet <span>♥</span></p>
+          </div>
+
+          <span class="project-detail-star">★</span>
+        </div>
+      </div>
+
+      <div class="project-detail-grid">
+
+        <!-- CONTEXTE -->
+        <article class="detail-card large-detail-card">
+          <h2 data-i18n="sae24_context_title">Contexte</h2>
+
+          <p data-i18n="sae24_context_text">
+            Dans le cadre de la SAÉ24, nous avons travaillé sur un projet intégré lié au suivi de modifications d’un banc avionique. Ce projet s’inscrit dans un contexte proche du monde professionnel, avec une problématique inspirée du domaine aéronautique et en lien avec une collaboration autour de Thales. L’objectif était de concevoir un système permettant de prendre des photos d’un banc avionique afin de garder une trace visuelle de l’avancement des modifications réalisées.
+          </p>
+        </article>
+
+        <!-- OBJECTIF -->
+        <article class="detail-card large-detail-card">
+          <h2 data-i18n="sae24_objective_title">Objectif</h2>
+
+          <p data-i18n="sae24_objective_text">
+            L’objectif principal était de mettre en place une solution capable de photographier un banc avionique, d’enregistrer les informations associées dans une base de données et de rendre ces données accessibles à travers une interface web. Le projet permet ainsi de suivre l’évolution des modifications et de faciliter la consultation des preuves visuelles.
+          </p>
+        </article>
+
+      </div>
+
+      <!-- ACTIONS -->
+      <article class="detail-card actions-card">
+        <h2 data-i18n="sae24_actions_title">Actions</h2>
+
+        <p data-i18n="sae24_actions_intro">
+          Pour répondre au cahier des charges, nous avons travaillé sur plusieurs parties du système.
+        </p>
+
+        <div class="actions-list">
+
+        <div class="action-item">
+          <h3 data-i18n="sae24_action1_title">Conception du système</h3>
+          <ul>
+            <li data-i18n="sae24_action1_li1">Définition du parcours : photo → stockage → consultation web.</li>
+          </ul>
+        </div>
+
+        <div class="action-item">
+          <h3 data-i18n="sae24_action2_title">Mise en place de la partie matérielle</h3>
+          <ul>
+            <li data-i18n="sae24_action2_li1">Utilisation d’un Raspberry Pi 3 relié à une caméra.</li>
+          </ul>
+        </div>
+
+        <div class="action-item">
+          <h3 data-i18n="sae24_action3_title">Base de données</h3>
+          <ul>
+            <li data-i18n="sae24_action3_li1">Stockage des informations liées aux photos : identifiant, date et heure.</li>
+          </ul>
+        </div>
+
+        <div class="action-item">
+          <h3 data-i18n="sae24_action4_title">Développement web</h3>
+          <ul>
+            <li data-i18n="sae24_action4_li1">Création d’une interface pour consulter les photos et leur suivi.</li>
+          </ul>
+        </div>
+
+      </div>
+      </article>
+
+      <div class="project-detail-grid bottom-detail-grid">
+
+        <!-- TECHNOS -->
+        <article class="detail-card">
+          <h2 data-i18n="sae24_tech_title">Technos / compétences</h2>
+
+          <ul class="check-list">
+            <li data-i18n="sae24_tech1">Systèmes embarqués : Raspberry Pi 3, caméra</li>
+            <li data-i18n="sae24_tech2">Développement web : HTML, CSS, PHP / JavaScript selon la partie réalisée</li>
+            <li data-i18n="sae24_tech3">Base de données : stockage et consultation des données</li>
+            <li data-i18n="sae24_tech4">Gestion de projet : organisation, répartition des tâches, travail en équipe</li>
+            <li data-i18n="sae24_tech5">Documentation : suivi de l’avancement, explication du fonctionnement du système</li>
+          </ul>
+        </article>
+
+        <!-- PREUVES -->
+        <article class="detail-card">
+          <h2 data-i18n="sae24_proofs_title">Preuves possibles</h2>
+
+          <ul class="proof-list">
+            <li data-i18n="sae24_proof1">Schéma du fonctionnement global du système.</li>
+            <li data-i18n="sae24_proof2">Capture d’écran de l’interface web.</li>
+            <li data-i18n="sae24_proof3">Photo du montage ou du Raspberry Pi.</li>
+            <li data-i18n="sae24_proof4">Extrait de la base de données.</li>
+            <li data-i18n="sae24_proof5">Rapport ou présentation du projet.</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <!-- DESCRIPTION PERSONNALISÉE -->
+      <article class="detail-card personal-detail-card">
+        <span class="personal-star">✦</span>
+
+        <h2 data-i18n="sae24_personal_title">Mon point de vue</h2>
+
+        <p data-i18n="sae24_personal_text">
+          Ce projet m’a intéressée car il relie plusieurs aspects du BUT R&T : le matériel, le web, la base de données et l’organisation d’un système complet. Il m’a permis de mieux comprendre comment une solution technique peut répondre à un besoin concret. J’ai aussi appris à travailler sur un projet plus long, où chaque partie dépend des autres et où la communication dans l’équipe est essentielle.
+        </p>
+      </article>
+
+      <div class="project-detail-nav">
+        <a href="projects.html" class="about-contact-btn" data-i18n="sae24_back_button">retour aux projets</a>
+        <a href="contact.html" class="about-contact-btn" data-i18n="sae24_contact_button">me contacter</a>
+      </div>
+
+      <span class="project-detail-doodle detail-doodle-one">✦</span>
+      <span class="project-detail-doodle detail-doodle-two">♡</span>
+
+    </section>
+
+    <div class="wave project-detail-wave"></div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

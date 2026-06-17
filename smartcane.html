@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Smart Cane - Aisya</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap" 
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="cursor-glow"></div>
+
+  <main class="page-wrapper project-detail-page">
+
+    <!-- HEADER -->
+    <header class="header">
+      <a href="index.html" class="logo">AA<span>.</span></a>
+
+      <nav class="nav" id="navMenu">
+        <a href="index.html" data-i18n="nav_home">accueil</a>
+        <a href="about.html" data-i18n="nav_about">à propos</a>
+        <a href="projects.html" class="active" data-i18n="nav_projects">projets</a>
+        <a href="competences.html" data-i18n="nav_skills">compétences</a>
+        <a href="contact.html" data-i18n="nav_contact">contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="language-switch">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <span>/</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+
+        <a href="cv-aisya.pdf" class="cv-button" download data-i18n="download_cv">
+          <span>↓</span>
+          télécharger mon CV
+        </a>
+      </div>
+
+      <button class="menu-button" id="menuButton">
+        ☰
+      </button>
+    </header>
+
+    <!-- PROJECT DETAIL CONTENT -->
+    <section class="project-detail-section">
+
+      <a href="projects.html" class="back-link" data-i18n="smartcane_back">← retour aux projets</a>
+
+      <div class="project-detail-hero">
+        <div class="project-detail-text">
+          <p class="section-label" data-i18n="smartcane_label">fiche projet</p>
+
+          <h1 class="project-detail-title" data-i18n="smartcane_title">
+            Smart Cane Project — Canne intelligente <span>♡</span>
+          </h1>
+
+          <p class="project-detail-intro" data-i18n="smartcane_intro">
+            Un prototype de canne intelligente conçu avec Arduino afin d’aider les personnes malvoyantes à détecter les obstacles et à se déplacer avec plus de sécurité.
+          </p>
+
+          <div class="project-detail-tags">
+            <span>Arduino</span>
+            <span data-i18n="smartcane_tag_sensors">Capteurs</span>
+            <span data-i18n="smartcane_tag_iot">IoT</span>
+            <span data-i18n="smartcane_tag_prototype">Prototype</span>
+          </div>
+        </div>
+
+        <div class="project-detail-visual">
+          <div class="tape project-detail-tape"></div>
+
+          <div class="project-detail-polaroid">
+            <div class="project-detail-image">
+              <img src="images/project-smartcane.jpg" alt="Smart Cane Project" />
+              <span>Smart Cane</span>
+            </div>
+            <p>Projet <span>♥</span></p>
+          </div>
+
+          <span class="project-detail-star">★</span>
+        </div>
+      </div>
+
+      <div class="project-detail-grid">
+
+        <!-- CONTEXTE -->
+        <article class="detail-card large-detail-card">
+          <h2 data-i18n="smartcane_context_title">Contexte</h2>
+
+          <p data-i18n="smartcane_context_text">
+            Ce projet avait pour objectif de concevoir une canne intelligente destinée aux personnes aveugles, malvoyantes ou aux personnes âgées ayant des difficultés de vision. L’idée était de proposer une aide technique simple et accessible, capable d’améliorer la sécurité lors des déplacements. Le projet s’inscrit dans une démarche d’innovation utile, en reliant l’électronique, les capteurs et la programmation à un besoin concret du quotidien.
+          </p>
+        </article>
+
+        <!-- OBJECTIF -->
+        <article class="detail-card large-detail-card">
+          <h2 data-i18n="smartcane_objective_title">Objectif</h2>
+
+          <p data-i18n="smartcane_objective_text">
+            L’objectif principal était de créer un prototype capable de détecter les obstacles autour de l’utilisateur et de l’alerter grâce à des signaux simples comme une vibration, un buzzer ou une lumière. Le système devait aussi pouvoir s’adapter à l’environnement, par exemple en activant automatiquement une LED lorsqu’il fait sombre.
+          </p>
+        </article>
+
+      </div>
+
+      <!-- ACTIONS -->
+      <article class="detail-card actions-card">
+        <h2 data-i18n="smartcane_actions_title">Actions</h2>
+
+        <p data-i18n="smartcane_actions_intro">
+          Pour réaliser ce projet, nous avons travaillé sur la conception du prototype, le choix des composants, le câblage, la programmation et les tests.
+        </p>
+
+        <div class="actions-list">
+
+        <div class="action-item">
+          <h3 data-i18n="smartcane_action1_title">Analyse du besoin</h3>
+          <ul>
+            <li data-i18n="smartcane_action1_li1">Définition des fonctions principales : détecter, alerter, améliorer la visibilité.</li>
+          </ul>
+        </div>
+
+        <div class="action-item">
+          <h3 data-i18n="smartcane_action2_title">Choix des composants</h3>
+          <ul>
+            <li data-i18n="smartcane_action2_li1">Utilisation d’Arduino, de capteurs, d’un buzzer, d’une LED et d’un moteur de vibration.</li>
+          </ul>
+        </div>
+
+        <div class="action-item">
+          <h3 data-i18n="smartcane_action3_title">Programmation du système</h3>
+          <ul>
+            <li data-i18n="smartcane_action3_li1">Déclenchement des alertes selon les obstacles et la luminosité.</li>
+          </ul>
+        </div>
+
+        <div class="action-item">
+          <h3 data-i18n="smartcane_action4_title">Tests et amélioration</h3>
+          <ul>
+            <li data-i18n="smartcane_action4_li1">Vérification du prototype et identification des améliorations possibles.</li>
+          </ul>
+        </div>
+
+      </div>
+      </article>
+
+      <div class="project-detail-grid bottom-detail-grid">
+
+        <!-- TECHNOS -->
+        <article class="detail-card">
+          <h2 data-i18n="smartcane_tech_title">Technos / compétences</h2>
+
+          <ul class="check-list">
+            <li data-i18n="smartcane_tech1">Systèmes embarqués : Arduino Uno</li>
+            <li data-i18n="smartcane_tech2">Capteurs : ultrason, capteur de lumière</li>
+            <li data-i18n="smartcane_tech3">Actionneurs : moteur de vibration, buzzer, LED</li>
+            <li data-i18n="smartcane_tech4">Programmation : logique de détection et conditions</li>
+            <li data-i18n="smartcane_tech5">Prototypage : câblage, tests, amélioration du montage</li>
+          </ul>
+        </article>
+
+        <!-- PREUVES -->
+        <article class="detail-card">
+          <h2 data-i18n="smartcane_proofs_title">Preuves possibles</h2>
+
+          <ul class="proof-list">
+            <li data-i18n="smartcane_proof1">Photo du prototype ou du montage Arduino.</li>
+            <li data-i18n="smartcane_proof2">Schéma du câblage électronique.</li>
+            <li data-i18n="smartcane_proof3">Extrait du code Arduino.</li>
+            <li data-i18n="smartcane_proof4">Vidéo ou démonstration du fonctionnement.</li>
+            <li data-i18n="smartcane_proof5">Rapport ou présentation du projet.</li>
+          </ul>
+        </article>
+
+      </div>
+
+      <!-- DESCRIPTION PERSONNALISÉE -->
+      <article class="detail-card personal-detail-card">
+        <span class="personal-star">✦</span>
+
+        <h2 data-i18n="smartcane_personal_title">Mon point de vue</h2>
+
+        <p data-i18n="smartcane_personal_text">
+          Ce projet m’a particulièrement intéressée car il montre comment la technologie peut être utilisée pour aider les autres. J’ai aimé travailler sur un prototype concret, où chaque composant avait un rôle précis. Ce projet m’a permis de mieux comprendre le lien entre les capteurs, la programmation et les besoins réels des utilisateurs. Il m’a aussi appris que même une solution simple peut avoir un impact important lorsqu’elle répond à un problème du quotidien.
+        </p>
+      </article>
+
+      <div class="project-detail-nav">
+        <a href="projects.html" class="about-contact-btn" data-i18n="smartcane_back_button">retour aux projets</a>
+        <a href="contact.html" class="about-contact-btn" data-i18n="smartcane_contact_button">me contacter</a>
+      </div>
+
+      <span class="project-detail-doodle detail-doodle-one">✦</span>
+      <span class="project-detail-doodle detail-doodle-two">♡</span>
+
+    </section>
+
+    <div class="wave project-detail-wave"></div>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
