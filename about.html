@@ -18,7 +18,8 @@
 </head>
 
 <body>
-    <div class="cursor-glow"></div>
+  <div class="cursor-glow"></div>
+
   <main class="page-wrapper about-page">
 
     <!-- HEADER -->
@@ -26,17 +27,25 @@
       <a href="index.html" class="logo">AA<span>.</span></a>
 
       <nav class="nav" id="navMenu">
-        <a href="index.html">accueil</a>
-        <a href="about.html" class="active">à propos</a>
-        <a href="projects.html">projets</a>
-        <a href="#">compétences</a>
-        <a href="#">contact</a>
+        <a href="index.html" data-i18n="nav_home">accueil</a>
+        <a href="about.html" class="active" data-i18n="nav_about">à propos</a>
+        <a href="projects.html" data-i18n="nav_projects">projets</a>
+        <a href="competences.html" data-i18n="nav_skills">compétences</a>
+        <a href="contact.html" data-i18n="nav_contact">contact</a>
       </nav>
 
-      <a href="#" class="cv-button">
-        <span>↓</span>
-        télécharger mon CV
-      </a>
+      <div class="header-actions">
+        <div class="language-switch">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <span>/</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+
+        <a href="cv-aisya.pdf" class="cv-button" download data-i18n="download_cv">
+          <span>↓</span>
+          télécharger mon CV
+        </a>
+      </div>
 
       <button class="menu-button" id="menuButton">
         ☰
@@ -47,127 +56,122 @@
     <section class="about-hero">
 
       <div class="about-hero-text">
-        <p class="section-label">à propos de moi</p>
+        <p class="section-label" data-i18n="about_label">à propos de moi</p>
 
-        <h1 class="about-title">
-          Ma passion : connecter, comprendre, créer du lien.
-          <span>♡</span>
+        <h1 class="about-title" data-i18n="about_title">
+          ma passion : connecter, comprendre, créer du lien. <span>♡</span>
         </h1>
 
-        <p class="about-intro">
-          Étudiante malaisienne en 1re année de BUT Réseaux & Télécommunications à l’IUT, 
-          je suis curieuse, déterminée et créative. J’aime comprendre comment les technologies 
-          fonctionnent, résoudre des problèmes concrets et créer des projets qui ont du sens.
+        <p class="about-intro" data-i18n="about_intro">
+          Originaire de Malaisie et actuellement en formation à l’IUT Nice Côte d’Azur, 
+          j’y rassemble les projets et expériences qui marquent mon parcours dans le domaine des réseaux et télécommunications.
+          Ce site présente mes réalisations, mes compétences et les apprentissages que je construis au fil de ma première année en France.
         </p>
-
       </div>
 
       <div class="about-photo-zone">
         <div class="tape about-tape-main"></div>
 
         <div class="about-photo-card large-photo">
-          <div class="about-color-block photo-blue"></div>
+          <img src="images/about-main.jpg" alt="Photo de Aisya" class="about-real-img" />
           <p>Aisya <span>♥</span></p>
         </div>
 
         <div class="about-photo-card small-photo">
-          <div class="about-color-block photo-green"></div>
+          <img src="images/about-small.jpg" alt="Photo personnelle" class="about-real-img" />
         </div>
 
         <div class="sticky-note">
-          Curieuse<br>
-          Optimiste<br>
-          Passionnée
+          <span data-i18n="about_sticky_note">Curieuse<br>Optimiste<br>Passionnée</span>
           <span>♡</span>
         </div>
       </div>
 
       <span class="about-doodle about-star-one">✦</span>
-      <span class="about-doodle about-smile">☺</span>
     </section>
-
-<!-- LINKEDIN CARD -->
-<section class="linkedin-card-section">
-  <div class="linkedin-card">
-    <div class="linkedin-logo-box">
-      <span>in</span>
-    </div>
-
-    <div class="linkedin-text">
-      <h2>Retrouvez-moi aussi sur LinkedIn <span>✦</span></h2>
-      <p>
-        J’y partage mon parcours, mes projets, mes apprentissages
-        et mes centres d’intérêt autour du numérique.
-      </p>
-    </div>
-
-    <a 
-      href="https://www.linkedin.com/in/aisya-binti-adil-zahni-82701529b?utm_source=share_via&utm_content=profile&utm_medium=member_ios" 
-      target="_blank" 
-      class="linkedin-button"
-    >
-      Voir mon profil ↗
-    </a>
-  </div>
-</section>
 
     <!-- STORY SECTION -->
     <section class="about-block story-block">
       <div class="story-image">
         <div class="tape story-tape"></div>
-        <div class="about-color-block photo-yellow"></div>
+        <img src="images/about-story.jpg" alt="Photo liée à mon parcours" class="story-real-img" />
       </div>
 
       <div class="story-text">
-        <h2>Mon histoire <span>♥</span></h2>
+        <h2 data-i18n="about_story_title">mon histoire <span>♥</span></h2>
 
-        <p>
-          Depuis toute petite, j’ai toujours été fascinée par la façon dont les technologies 
-          rapprochent les personnes et simplifient la vie quotidienne. Cette curiosité m’a menée 
-          vers les réseaux et les télécommunications, un domaine où je peux apprendre, tester, 
-          collaborer et transformer des idées en solutions concrètes.
+        <p data-i18n="about_story_text">
+          Depuis longtemps, je suis attirée par la manière dont le numérique permet de connecter les personnes, 
+          de transmettre des informations et de faciliter le quotidien. 
+          C’est cette curiosité qui m’a menée vers les réseaux et les télécommunications, 
+          un domaine où je peux apprendre en testant, en observant et en construisant progressivement des solutions.
+        </br>
+          Dans ma façon de travailler, j’aime avancer étape par étape : 
+          comprendre le besoin, chercher des pistes, essayer, me tromper parfois, puis améliorer. 
+          Les projets réalisés en équipe m’aident aussi à développer ma communication, mon organisation et ma capacité à collaborer.
         </p>
 
-        <a href="projects.html" class="inline-link">voir mes projets →</a>
+        <a href="projects.html" class="inline-link" data-i18n="about_story_link">voir mes projets →</a>
       </div>
     </section>
 
     <!-- HOBBIES SECTION -->
     <section class="about-block hobbies-block">
       <div class="block-heading">
-        <h2>Mes hobbies & intérêts <span>☺</span></h2>
-        <p>Quelques activités qui m’inspirent, m’aident à apprendre autrement et nourrissent ma créativité.</p>
+        <h2 data-i18n="about_hobbies_title">mes loisirs & intérêts <span>☺</span></h2>
+
+        <p data-i18n="about_hobbies_intro">
+          Quelques activités qui m’inspirent, m’aident à apprendre autrement et nourrissent ma créativité.
+        </p>
       </div>
 
       <div class="hobby-gallery">
         <article class="hobby-card">
-          <div class="hobby-image hobby-one"></div>
-          <h3>Lecture</h3>
-          <p>Lire me permet de ralentir, découvrir de nouvelles idées et mieux comprendre le monde.</p>
+          <div class="hobby-image">
+            <img src="images/hobby-reading.jpg" alt="Lecture" />
+          </div>
+
+          <h3 data-i18n="hobby_reading_title">Lecture</h3>
+
+          <p data-i18n="hobby_reading_text">
+            Lire me permet de ralentir, découvrir de nouvelles idées et mieux comprendre le monde.
+          </p>
         </article>
 
         <article class="hobby-card">
-          <div class="hobby-image hobby-two"></div>
-          <h3>Musique</h3>
-          <p>La musique m’accompagne dans mes moments de travail, de concentration et de créativité.</p>
+          <div class="hobby-image">
+            <img src="images/hobby-music.jpg" alt="Musique" />
+          </div>
+
+          <h3 data-i18n="hobby_music_title">Musique</h3>
+
+          <p data-i18n="hobby_music_text">
+            La musique m’accompagne dans mes moments de travail, de concentration et de créativité.
+          </p>
         </article>
 
         <article class="hobby-card">
-          <div class="hobby-image hobby-three"></div>
-          <h3>Running</h3>
-          <p>Courir m’aide à garder une routine, à me dépasser et à rester motivée.</p>
+          <div class="hobby-image">
+            <img src="images/hobby-surf.jpg" alt="Surf" />
+          </div>
+
+          <h3 data-i18n="hobby_surf_title">Surf</h3>
+
+          <p data-i18n="hobby_surf_text">
+            Le surf me rappelle l’importance de l’équilibre, de la patience et de l’adaptation.
+          </p>
         </article>
 
         <article class="hobby-card">
-          <div class="hobby-image hobby-four"></div>
-          <h3>Surf</h3>
-          <p>Le surf me rappelle l’importance de l’équilibre, de la patience et de l’adaptation.</p>
-        </article>
+          <div class="hobby-image">
+            <img src="images/hobby-photo.jpg" alt="Photo" />
+          </div>
 
-        <article class="hobby-card">
-          <div class="hobby-image hobby-five"></div>
-          <h3>Photo</h3>
-          <p>La photographie me permet de capturer des moments et de raconter une ambiance.</p>
+          <h3 data-i18n="hobby_photo_title">Photo</h3>
+
+          <p data-i18n="hobby_photo_text">
+            La photographie me permet de capturer des moments et de raconter une ambiance.
+          </p>
         </article>
       </div>
     </section>
@@ -175,41 +179,134 @@
     <!-- OUTSIDE IUT SECTION -->
     <section class="about-block outside-block" id="actions">
       <div class="outside-text">
-        <h2>En dehors de l’IUT : MASAF & engagement <span>♡</span></h2>
+        <h2 data-i18n="about_masaf_title">En dehors de l’IUT : MASAF & engagement <span>♡</span></h2>
 
-        <p>
+        <p data-i18n="about_masaf_text">
           En dehors des cours, je participe à des projets associatifs avec MASAF. J’aime organiser 
           des événements, contribuer à des actions solidaires, travailler en équipe et créer du lien 
           avec d’autres étudiants. Ces expériences m’apprennent à communiquer, m’organiser et prendre 
           des initiatives.
         </p>
-
       </div>
 
       <div class="outside-gallery">
-        <div class="mini-photo photo-blue"></div>
-        <div class="mini-photo photo-yellow"></div>
-        <div class="mini-photo photo-green"></div>
+        <div class="mini-photo">
+          <img src="images/masaf-1.jpg" alt="Activité MASAF" />
+        </div>
+
+        <div class="mini-photo">
+          <img src="images/masaf-2.jpg" alt="Projet associatif MASAF" />
+        </div>
+
+        <div class="mini-photo">
+          <img src="images/masaf-3.jpg" alt="Engagement étudiant" />
+        </div>
       </div>
 
       <div class="paper-note">
-        Ensemble,<br>
-        on va plus loin.
+        <span data-i18n="about_paper_note">Ensemble,<br>on va plus loin.</span>
         <span>♥</span>
+      </div>
+    </section>
+
+    <!-- PARCOURS SECTION -->
+<section class="about-block parcours-block">
+  <div class="parcours-title-tape">
+    <h2 data-i18n="parcours_title">mon parcours</h2>
+  </div>
+
+  <div class="parcours-timeline">
+
+    <!-- IUT -->
+    <article class="parcours-item parcours-blue">
+      <div class="parcours-pin"></div>
+
+      <div class="parcours-photo">
+        <img src="images/parcours-iut.jpg" alt="IUT Nice Côte d’Azur" />
+      </div>
+
+      <div class="parcours-dot"></div>
+
+      <h3 data-i18n="parcours_iut_title">IUT Nice Côte d’Azur</h3>
+      <p data-i18n="parcours_iut_desc">BUT Réseaux & Télécommunications</p>
+      <span data-i18n="parcours_iut_date">2025 – présent</span>
+    </article>
+
+    <!-- UniKL -->
+    <article class="parcours-item parcours-yellow">
+      <div class="parcours-pin"></div>
+
+      <div class="parcours-photo">
+        <img src="images/parcours-unikl.jpg" alt="UniKL MFI" />
+      </div>
+
+      <div class="parcours-dot"></div>
+
+      <h3 data-i18n="parcours_unikl_title">UniKL MFI</h3>
+      <p data-i18n="parcours_unikl_desc">Classe préparatoire</p>
+      <span data-i18n="parcours_unikl_date">2024 – 2025</span>
+    </article>
+
+    <!-- TKC -->
+    <article class="parcours-item parcours-green">
+      <div class="parcours-pin"></div>
+
+      <div class="parcours-photo">
+        <img src="images/parcours-tkc.jpg" alt="Tunku Kurshiah College" />
+      </div>
+
+      <div class="parcours-dot"></div>
+
+      <h3 data-i18n="parcours_tkc_title">Tunku Kurshiah College</h3>
+      <p data-i18n="parcours_tkc_desc">Lycée</p>
+      <span data-i18n="parcours_tkc_date">2019 – 2024</span>
+    </article>
+
+  </div>
+
+  <span class="parcours-doodle parcours-heart">♡</span>
+  <span class="parcours-doodle parcours-star">☆</span>
+  <span class="parcours-doodle parcours-plane">✈</span>
+</section>
+
+    <!-- LINKEDIN CARD -->
+    <section class="linkedin-card-section">
+      <div class="linkedin-card">
+        <div class="linkedin-logo-box">
+          <span>in</span>
+        </div>
+
+        <div class="linkedin-text">
+          <h2 data-i18n="about_linkedin_title">Retrouvez-moi aussi sur LinkedIn <span>✦</span></h2>
+
+          <p data-i18n="about_linkedin_text">
+            J’y partage mon parcours, mes projets, mes apprentissages
+            et mes centres d’intérêt autour du numérique.
+          </p>
+        </div>
+
+        <a 
+          href="https://www.linkedin.com/in/aisya-binti-adil-zahni-82701529b?utm_source=share_via&utm_content=profile&utm_medium=member_ios" 
+          target="_blank" 
+          class="linkedin-button"
+        >
+          <span data-i18n="about_linkedin_button">Voir mon profil ↗</span>
+        </a>
       </div>
     </section>
 
     <!-- CTA SECTION -->
     <section class="about-final-cta">
-        <div>
-            <span class="cta-star">★</span>
-            <p>
-            Envie d’en savoir plus ou de collaborer ?<br>
-            Je suis toujours ouverte aux échanges !
-            </p>
-        </div>
+      <div>
+        <span class="cta-star">★</span>
 
-        <a href="#" class="about-contact-btn">me contacter →</a>
+        <p data-i18n="about_final_cta_text">
+          Envie d’en savoir plus ou de collaborer ?<br>
+          Je suis toujours ouverte aux échanges !
+        </p>
+      </div>
+
+      <a href="contact.html" class="about-contact-btn" data-i18n="about_final_cta_button">me contacter →</a>
     </section>
 
     <div class="wave about-wave"></div>
