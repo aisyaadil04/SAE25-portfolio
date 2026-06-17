@@ -18,7 +18,8 @@
 </head>
 
 <body>
-    <div class="cursor-glow"></div>
+  <div class="cursor-glow"></div>
+
   <main class="page-wrapper projects-page">
 
     <!-- HEADER -->
@@ -26,17 +27,25 @@
       <a href="index.html" class="logo">AA<span>.</span></a>
 
       <nav class="nav" id="navMenu">
-        <a href="index.html">accueil</a>
-        <a href="about.html">à propos</a>
-        <a href="projects.html" class="active">projets</a>
-        <a href="#">compétences</a>
-        <a href="#">contact</a>
+        <a href="index.html" data-i18n="nav_home">accueil</a>
+        <a href="about.html" data-i18n="nav_about">à propos</a>
+        <a href="projects.html" class="active" data-i18n="nav_projects">projets</a>
+        <a href="competences.html" data-i18n="nav_skills">compétences</a>
+        <a href="contact.html" data-i18n="nav_contact">contact</a>
       </nav>
 
-      <a href="#" class="cv-button">
-        <span>↓</span>
-        télécharger mon CV
-      </a>
+      <div class="header-actions">
+        <div class="language-switch">
+          <button class="lang-btn active" data-lang="fr">FR</button>
+          <span>/</span>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+
+        <a href="cv-aisya.pdf" class="cv-button" download data-i18n="download_cv">
+          <span>↓</span>
+          télécharger mon CV
+        </a>
+      </div>
 
       <button class="menu-button" id="menuButton">
         ☰
@@ -47,14 +56,13 @@
     <section class="projects-section">
 
       <div class="projects-heading">
-        <p class="section-label">mes projets</p>
+        <p class="section-label" data-i18n="projects_label">mes réalisations</p>
 
-        <h1 class="projects-title">
-          mes projets
-          <span>♡</span>
+        <h1 class="projects-title" data-i18n="projects_title">
+          mes projets <span>♡</span>
         </h1>
 
-        <p class="projects-intro">
+        <p class="projects-intro" data-i18n="projects_intro">
           Voici une sélection de projets réalisés pendant mon parcours. 
           Chaque projet m’a permis d’apprendre, de collaborer et de créer 
           des solutions concrètes autour des réseaux, du web, de l’IoT et de la communication.
@@ -63,11 +71,11 @@
 
       <!-- FILTER BUTTONS -->
       <div class="project-filters">
-        <button class="filter-btn active" data-filter="all">tous</button>
-        <button class="filter-btn" data-filter="infra">réseaux & infra</button>
-        <button class="filter-btn" data-filter="web">développement web</button>
-        <button class="filter-btn" data-filter="iot">iot & embarqué</button>
-        <button class="filter-btn" data-filter="com">communication</button>
+        <button class="filter-btn active" data-filter="all" data-i18n="filter_all">tous</button>
+        <button class="filter-btn" data-filter="infra" data-i18n="filter_infra">réseaux & infra</button>
+        <button class="filter-btn" data-filter="web" data-i18n="filter_web">développement web</button>
+        <button class="filter-btn" data-filter="iot" data-i18n="filter_iot">iot & embarqué</button>
+        <button class="filter-btn" data-filter="com" data-i18n="filter_com">communication</button>
       </div>
 
       <!-- PROJECT CARDS -->
@@ -75,16 +83,17 @@
 
         <!-- PROJECT 1 -->
         <article class="project-card" data-category="web infra">
-          <div class="project-color-box box-blue">
+          <div class="project-image-box">
+            <img src="images/project-sae24.jpg" alt="SAÉ24 — Banc Avionique" />
             <span>SAÉ24</span>
           </div>
 
           <div class="project-content">
-            <p class="project-tag">développement web · infrastructure</p>
+            <p class="project-tag" data-i18n="project_sae24_tag">développement web · infrastructure</p>
 
             <h2>SAÉ24 — Banc Avionique</h2>
 
-            <p>
+            <p data-i18n="project_sae24_text">
               Projet intégré autour d’un système de suivi des modifications d’un banc avionique. 
               L’objectif est de prendre des photos, stocker les informations en base de données 
               et suivre l’évolution des modifications via une interface web.
@@ -92,53 +101,55 @@
 
             <div class="project-meta">
               <span>Raspberry Pi 3</span>
-              <span>Base de données</span>
-              <span>Site web</span>
+              <span data-i18n="project_meta_database">Base de données</span>
+              <span data-i18n="project_meta_website">Site web</span>
             </div>
 
-            <a href="#" class="project-link">découvrir →</a>
+            <a href="sae24.html" class="project-link" data-i18n="project_discover">découvrir →</a>
           </div>
         </article>
 
         <!-- PROJECT 2 -->
         <article class="project-card" data-category="com">
-          <div class="project-color-box box-yellow">
+          <div class="project-image-box">
+            <img src="images/project-sae14.jpg" alt="SAÉ14 — E-réputation" />
             <span>SAÉ14</span>
           </div>
 
           <div class="project-content">
-            <p class="project-tag">communication · sensibilisation</p>
+            <p class="project-tag" data-i18n="project_sae14_tag">communication · sensibilisation</p>
 
             <h2>SAÉ14 — E-réputation</h2>
 
-            <p>
+            <p data-i18n="project_sae14_text">
               Projet consacré à l’e-réputation. Il comprend une étude de cas sur l’impact 
               des actions en ligne, puis une activité de sensibilisation destinée à un public 
               collégien pour expliquer comment protéger son image numérique.
             </p>
 
             <div class="project-meta">
-              <span>Présentation</span>
-              <span>Prévention</span>
-              <span>Travail d’équipe</span>
+              <span data-i18n="project_meta_presentation">Présentation</span>
+              <span data-i18n="project_meta_prevention">Prévention</span>
+              <span data-i18n="project_meta_teamwork">Travail d’équipe</span>
             </div>
 
-            <a href="#" class="project-link">découvrir →</a>
+            <a href="sae14.html" class="project-link" data-i18n="project_discover">découvrir →</a>
           </div>
         </article>
 
         <!-- PROJECT 3 -->
         <article class="project-card" data-category="iot">
-          <div class="project-color-box box-green">
+          <div class="project-image-box">
+            <img src="images/project-smartcane.jpg" alt="Smart Cane Project" />
             <span>Smart Cane</span>
           </div>
 
           <div class="project-content">
-            <p class="project-tag">iot · systèmes embarqués</p>
+            <p class="project-tag" data-i18n="project_smartcane_tag">iot · systèmes embarqués</p>
 
             <h2>Smart Cane Project</h2>
 
-            <p>
+            <p data-i18n="project_smartcane_text">
               Maquette de canne intelligente conçue avec Arduino pour aider les personnes 
               malvoyantes. Le système détecte les obstacles grâce à des capteurs, prévient 
               l’utilisateur par vibration et active une lumière lorsqu’il fait sombre.
@@ -146,11 +157,11 @@
 
             <div class="project-meta">
               <span>Arduino</span>
-              <span>Capteurs</span>
-              <span>Prototype</span>
+              <span data-i18n="project_meta_sensors">Capteurs</span>
+              <span data-i18n="project_meta_prototype">Prototype</span>
             </div>
 
-            <a href="#" class="project-link">découvrir →</a>
+            <a href="smartcane.html" class="project-link" data-i18n="project_discover">découvrir →</a>
           </div>
         </article>
 
@@ -159,7 +170,7 @@
       <!-- DECORATIONS -->
       <span class="project-doodle star-left">✦</span>
       <span class="project-doodle star-right">☆</span>
-      <span class="project-doodle note">Chaque projet est une nouvelle aventure !</span>
+      <span class="project-doodle note" data-i18n="projects_note">Chaque projet est une nouvelle aventure !</span>
 
     </section>
 
